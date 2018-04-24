@@ -1,0 +1,10 @@
+exemple=[134,4156,134,2356,11,51,256,134,26,145,145,65421,52,6]
+def heap(name):
+    import heapq
+    heapq.heapify(name)
+    print(name)
+    for i in range(len(name)):
+        print(heapq.heappop(name))
+heap(exemple)
+
+
