@@ -1,0 +1,20 @@
+import math
+def quadratic():
+    a=int(input('What is a \n'))
+    b=int(input('What is b \n'))
+    c=int(input('What is c \n'))
+    if not isinstance(a,int):
+        raise TypeError('a bad operand type')
+    elif not isinstance(b,int):
+        raise TypeError('b bad operand type')
+    elif not isinstance(c,int):
+        raise TypeError('c bad operand type')
+    if b**2-4*a*c<0:
+        print('none x1,x2')
+        return 'none x1,x2'
+    elif b**2-4*a*c>=0:
+        x1=(-b+math.sqrt(b**2-4*a*c))/2*a
+        x2=(-b-math.sqrt(b**2-4*a*c))/2*a
+    return x1,x2         
+quadratic()
+

@@ -1,0 +1,8 @@
+def triangel():
+    print([x1,1,x2 for x1 in '\n'*10 for x2 in '\n'*10])
+    yield [x1,1,x2 for x1 in '\n'*10 for x2 in '\n'*10]
+    yield [x1,1,' ',1,x2 for x1 in '\n'*9 for x2 in '\n'*9]
+    yield '\n'*9+'1'+' '+'1'+'\n'*9
+next(triangel)
+ 
+    
